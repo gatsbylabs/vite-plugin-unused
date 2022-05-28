@@ -52,6 +52,7 @@
   },
   "homepage": "https://github.com/gatsbylabs/vite-plugin-unused/#readme",
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.{js,ts,tsx,jsx}": "eslint --cache --fix",
+    "*.{js,ts,tsx,jsx,json,md}": "prettier --write"
   }
 }
