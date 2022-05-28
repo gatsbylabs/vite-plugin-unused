@@ -9,16 +9,26 @@
   "author": "Enoch Chau <enoch@gatsby.events>",
   "license": "MIT",
   "packageManager": "yarn@3.2.1",
+  "scripts": {
+    "fmt": "prettier --write .",
+    "lint": "eslint src/ --fix",
+    "typecheck": "tsc",
+    "build": "tsc -p tsconfig.build.json"
+  },
   "dependencies": {
-    "fast-glob": "^3.2.11"
+    "fast-glob": "^3.2.11",
+    "prettier": "^2.6.2"
   },
   "devDependencies": {
     "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
     "typescript": "^4.7.2",
     "vite": "^2.9.9"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
     "url": "git+https://github.com/gatsbylabs/vite-plugin-unused.git"
   },
   "keywords": [
@@ -26,7 +36,7 @@
     "plugin",
     "unused"
   ],
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/gatsbylabs/vite-plugin-unused/issues"
   },
   "homepage": "https://github.com/gatsbylabs/vite-plugin-unused/#readme"
