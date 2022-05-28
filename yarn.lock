@@ -29,6 +29,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gatsbylabs/vite-plugin-unused@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@gatsbylabs/vite-plugin-unused@workspace:."
+  dependencies:
+    "@types/node": ^17.0.35
+    "@typescript-eslint/eslint-plugin": ^5.26.0
+    "@typescript-eslint/parser": ^5.26.0
+    eslint: ^8.16.0
+    fast-glob: ^3.2.11
+    husky: ">=6"
+    lint-staged: ">=10"
+    npm-run-all: ^4.1.5
+    pinst: ">=2"
+    prettier: ^2.6.2
+    typescript: ^4.7.2
+    vite: ^2.9.9
+    vitest: ^0.12.9
+  peerDependencies:
+    vite: ^2.9.9
+  languageName: unknown
+  linkType: soft
+
 "@humanwhocodes/config-array@npm:^0.9.2":
   version: 0.9.5
   resolution: "@humanwhocodes/config-array@npm:0.9.5"
@@ -3246,28 +3268,6 @@ __metadata:
   checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
   languageName: node
   linkType: hard
-
-"vite-plugin-unused@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "vite-plugin-unused@workspace:."
-  dependencies:
-    "@types/node": ^17.0.35
-    "@typescript-eslint/eslint-plugin": ^5.26.0
-    "@typescript-eslint/parser": ^5.26.0
-    eslint: ^8.16.0
-    fast-glob: ^3.2.11
-    husky: ">=6"
-    lint-staged: ">=10"
-    npm-run-all: ^4.1.5
-    pinst: ">=2"
-    prettier: ^2.6.2
-    typescript: ^4.7.2
-    vite: ^2.9.9
-    vitest: ^0.12.9
-  peerDependencies:
-    vite: ^2.9.9
-  languageName: unknown
-  linkType: soft
 
 "vite@npm:^2.9.8, vite@npm:^2.9.9":
   version: 2.9.9
