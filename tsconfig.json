@@ -2,6 +2,7 @@
   "compilerOptions": {
     "incremental": true,
     "target": "es2016",
+    "lib": ["ESNext"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "module": "commonjs",
@@ -14,8 +15,10 @@
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true
+    "strict": true,
+    "noEmit": true
   },
   "include": ["src/", "test/"]
 }
