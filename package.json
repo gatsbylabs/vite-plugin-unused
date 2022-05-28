@@ -15,6 +15,7 @@
     "typecheck": "tsc",
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
+    "test:example": "cd ./example && vite build",
     "prepare": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
