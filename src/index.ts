@@ -1,6 +1,7 @@
 import { Plugin } from "vite";
 import path from "path";
 import fs from "fs";
+import glob
 
 interface PluginUnusedOptions {
   includeDirs: RegExp[];
