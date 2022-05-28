@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-unused",
+  "name": "@gatsbylabs/vite-plugin-unused",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
