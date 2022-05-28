@@ -19,13 +19,13 @@ An example vite project can be found in the `examples/` directory.
 
 ```ts
 interface Options {
-  // glob pattern of files to exclude
-  exclude?: string[];
-  // glob pattern of file extensions``
-  // defaults to  `["*.ts", "*.js", "*.jsx", "*.tsx"]`
-  ext?: string[];
   // root folder to look for files, this branches off the root found from your vite config
   // defaults to "src/"
   root?: string;
+  // glob pattern of file extensions
+  // defaults to  `["*.ts", "*.js", "*.jsx", "*.tsx"]`
+  ext?: string[];
+  // glob pattern of files to exclude, this uses the root configured in this plugins options.
+  exclude?: string[];
 }
 ```
