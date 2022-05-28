@@ -34,20 +34,25 @@ export function pluginUnused(opts: Options): Plugin {
     async buildEnd() {
       const root = path.join(config.root, opts.root ?? "src/");
       const extensionGlobs = ext.map((ext) => path.join(root, "**", ext));
+      const excludeGlobs = exclude.map((ex) => path.join(root, ex));
 
       const fgOpts = { dot: true };
       const [allFiles, excludedFiles] = await Promise.all([
         globResolve(extensionGlobs, fgOpts),
-        globResolve(exclude, fgOpts),
+        globResolve(excludeGlobs, fgOpts),
       ]);
 
       const foundFiles = filterExcluded(allFiles, excludedFiles);
       const unusedFiles = filterExcluded(foundFiles, usedFiles);
 
-      console.log("Unused files:");
-      unusedFiles.forEach((fileName) => {
-        console.log("-", fileName);
-      });
+      if (unusedFiles.length > 0) {
+        console.log("Unused files:");
+        unusedFiles.forEach((fileName) => {
+          console.log("-", fileName);
+        });
+      } else {
+        console.log("No unused files found");
+      }
     },
   };
 }
