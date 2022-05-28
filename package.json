@@ -1,0 +1,33 @@
+{
+  "name": "vite-plugin-unused",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "author": "Enoch Chau <enoch@gatsby.events>",
+  "license": "MIT",
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "fast-glob": "^3.2.11"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.35",
+    "typescript": "^4.7.2",
+    "vite": "^2.9.9"
+  },
+  "repository": {
+    "type": "git"
+    "url": ""
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "unused"
+  ],
+  "bugs":{
+    "url": ""
+  },
+  "homepage": ""
+}
