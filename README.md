@@ -29,3 +29,7 @@ interface Options {
   exclude?: string[];
 }
 ```
+
+---
+
+Created and maintained by [Enoch Chau](https://enochchau.com) and the engineers at [Gatsby Labs](https://gatsby.events).
